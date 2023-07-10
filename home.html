@@ -1,0 +1,21 @@
+<!-- <h1>Top Headlines</h1>
+<ul>
+  <li ng-repeat="headline in headlines">
+    <a href="{{ headline.url }}">{{ headline.title }}</a>
+    <p>{{ headline.description }}</p>
+  </li>
+</ul> -->
+<h2 class='text-center my-4 '>NewsMonkey - Top Headlines</h2>
+
+<div style="background-color: black;" >
+    <div class=' row ' >
+        <div class="card " style="width: 20rem;" ng-repeat="items in headlines">
+            <img ng-src={{items.urlToImage}} class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{items.title}}</h5>
+                <p class="card-text">{{items.description}}</p>
+                <a href="{{items.url}}" target="_blank" class="btn btn-dark btn-sm">Know More</a>
+            </div>
+        </div>
+    </div>
+</div>

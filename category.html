@@ -1,0 +1,7 @@
+<h1>Category: {{ category }}</h1>
+<ul>
+  <li ng-repeat="article in articles">
+    <a href="{{ article.url }}">{{ article.title }}</a>
+    <p>{{ article.description }}</p>
+  </li>
+</ul>
